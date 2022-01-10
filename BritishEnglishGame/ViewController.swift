@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
-            // 每次打開 APP 會更改題目順序
+            // the order of quetions will change every time APP runs
             questions.shuffle()
             changeContents()
         }
@@ -39,10 +39,10 @@ class ViewController: UIViewController {
                                questions[index].optionB,
                                questions[index].optionC,
                                questions[index].optionD]
-            // 更改四個選項的順序
+            // change order of 4 options
             optionArray.shuffle()
            
-            // 設定 button title
+            // set button title
             for i in 0...3 {
                 // answerButtons[i].titleLabel?.font = UIFont(name: "", size: 36)
                 answerButtons[i].setTitle(optionArray[i], for: .normal)
