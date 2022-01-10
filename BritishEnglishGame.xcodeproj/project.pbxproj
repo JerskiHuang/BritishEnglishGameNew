@@ -13,6 +13,9 @@
 		74F18BCA278C5F3B006B4B6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F18BC8278C5F3B006B4B6B /* Main.storyboard */; };
 		74F18BCC278C5F3D006B4B6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74F18BCB278C5F3D006B4B6B /* Assets.xcassets */; };
 		74F18BCF278C5F3D006B4B6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F18BCD278C5F3D006B4B6B /* LaunchScreen.storyboard */; };
+		74F18BDA278C74E9006B4B6B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 74F18BD9278C74E9006B4B6B /* Kingfisher */; };
+		74F18BDC278C78A5006B4B6B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F18BDB278C78A4006B4B6B /* Question.swift */; };
+		74F18BDF278C7A81006B4B6B /* CodableCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 74F18BDE278C7A81006B4B6B /* CodableCSV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,7 @@
 		74F18BCB278C5F3D006B4B6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74F18BCE278C5F3D006B4B6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74F18BD0278C5F3D006B4B6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74F18BDB278C78A4006B4B6B /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74F18BDF278C7A81006B4B6B /* CodableCSV in Frameworks */,
+				74F18BDA278C74E9006B4B6B /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +67,7 @@
 				74F18BC6278C5F3B006B4B6B /* ViewController.swift */,
 				74F18BC8278C5F3B006B4B6B /* Main.storyboard */,
 				74F18BCB278C5F3D006B4B6B /* Assets.xcassets */,
+				74F18BDB278C78A4006B4B6B /* Question.swift */,
 				74F18BCD278C5F3D006B4B6B /* LaunchScreen.storyboard */,
 				74F18BD0278C5F3D006B4B6B /* Info.plist */,
 			);
@@ -83,6 +90,10 @@
 			dependencies = (
 			);
 			name = BritishEnglishGame;
+			packageProductDependencies = (
+				74F18BD9278C74E9006B4B6B /* Kingfisher */,
+				74F18BDE278C7A81006B4B6B /* CodableCSV */,
+			);
 			productName = BritishEnglishGame;
 			productReference = 74F18BBF278C5F3B006B4B6B /* BritishEnglishGame.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,10 @@
 				Base,
 			);
 			mainGroup = 74F18BB6278C5F3B006B4B6B;
+			packageReferences = (
+				74F18BD8278C74E9006B4B6B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				74F18BDD278C7A80006B4B6B /* XCRemoteSwiftPackageReference "CodableCSV" */,
+			);
 			productRefGroup = 74F18BC0278C5F3B006B4B6B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74F18BC7278C5F3B006B4B6B /* ViewController.swift in Sources */,
+				74F18BDC278C78A5006B4B6B /* Question.swift in Sources */,
 				74F18BC3278C5F3B006B4B6B /* AppDelegate.swift in Sources */,
 				74F18BC5278C5F3B006B4B6B /* SceneDelegate.swift in Sources */,
 			);
@@ -360,6 +376,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		74F18BD8278C74E9006B4B6B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		74F18BDD278C7A80006B4B6B /* XCRemoteSwiftPackageReference "CodableCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dehesa/CodableCSV";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		74F18BD9278C74E9006B4B6B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74F18BD8278C74E9006B4B6B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		74F18BDE278C7A81006B4B6B /* CodableCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74F18BDD278C7A80006B4B6B /* XCRemoteSwiftPackageReference "CodableCSV" */;
+			productName = CodableCSV;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 74F18BB7278C5F3B006B4B6B /* Project object */;
 }
